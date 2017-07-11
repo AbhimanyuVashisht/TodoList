@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="374d8ec6-5484-49a3-81b4-a53ce07ac06c" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/customStyle.css" afterPath="$PROJECT_DIR$/css/customStyle.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/scriptTodo.js" afterPath="$PROJECT_DIR$/js/scriptTodo.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -20,18 +22,18 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
+            <state relative-caret-position="374">
               <caret line="49" column="19" lean-forward="false" selection-start-line="49" selection-start-column="19" selection-end-line="52" selection-end-column="44" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scriptTodo.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="scriptTodo.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/scriptTodo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-266">
-              <caret line="47" column="19" lean-forward="false" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
+            <state relative-caret-position="168">
+              <caret line="32" column="7" lean-forward="false" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
               <folding>
                 <element signature="e#0#36#0" expanded="false" />
               </folding>
@@ -39,11 +41,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="customStyle.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="customStyle.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/customStyle.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+            <state relative-caret-position="294">
+              <caret line="21" column="25" lean-forward="false" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -69,9 +71,9 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/public_static/js/todolistjquery.js" />
         <option value="$PROJECT_DIR$/server.js" />
-        <option value="$PROJECT_DIR$/css/customStyle.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/scriptTodo.js" />
+        <option value="$PROJECT_DIR$/css/customStyle.css" />
       </list>
     </option>
   </component>
@@ -286,12 +288,12 @@
       <workItem from="1499589238792" duration="1397000" />
       <workItem from="1499596012724" duration="1931000" />
       <workItem from="1499679752843" duration="31000" />
-      <workItem from="1499787548987" duration="13804000" />
+      <workItem from="1499787548987" duration="15879000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26389000" />
+    <option name="totallyTimeSpent" value="28464000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="707" y="21" width="659" height="747" extended-state="4" />
@@ -657,9 +659,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/scriptTodo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="32" column="7" lean-forward="false" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#36#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
+        <state relative-caret-position="374">
           <caret line="49" column="19" lean-forward="false" selection-start-line="49" selection-start-column="19" selection-end-line="52" selection-end-column="44" />
           <folding />
         </state>
@@ -667,19 +679,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/customStyle.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+        <state relative-caret-position="294">
+          <caret line="21" column="25" lean-forward="false" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/scriptTodo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-266">
-          <caret line="47" column="19" lean-forward="false" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#36#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>

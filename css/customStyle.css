@@ -10,3 +10,14 @@
 .icn-move {
     color: #0275d8;
 }
+
+
+#todoList-container > li:first-child > .fa-chevron-up{
+    visibility: hidden;
+    pointer-events: none;
+}
+
+#todoList-container > li:last-child > .fa-chevron-down{
+    visibility: hidden;
+    pointer-events: none;
+}

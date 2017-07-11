@@ -23,10 +23,16 @@ $(function () {
     });
     
     btnClean.click(function () {
-        
+        deleteDone();
     })
 });
 
+function deleteDone() {
+    todos = todos.filter((item, index, array) => {
+        return !item.done;
+    });
+    refreshTodos();
+}
 // Refresh the TodoList
 function refreshTodos(firstPageLoad = false) {
     if(!firstPageLoad){
