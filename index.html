@@ -3,8 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <title>Todo-List</title>
+
+    <!--CSS links-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/customStyle.css">
+
+    <!--JS links-->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+
 </head>
 <body>
 
+    <div class="container">
+        <div class="col-3"></div>
+        <div class="row">
+            <div class="col-6">
+                <h1 class="text-center">Todo List</h1>
+            </div>
+        </div>
+        <div class="col-3"></div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <input type="text" class="form-control" id="input-new-todo" placeholder="Add To-dos here...">
+            </div>
+            <div class="col-2">
+                <button id="btn-add-todo" class="btn btn-primary">
+                    <i class="fa fa-plus-circle"></i>
+                </button>
+            </div>
+            <div class="col-2">
+                <button id="btn-clear-done" class="btn btn-danger">
+                    <i class="fa fa-trash"></i>
+                </button>
+            </div>
+        </div>
+        <div class="row">
+            <div id="todoList-container" class="col-12">
+                <li class="list-group-item">Sample Item</li>
+                <li class="list-group-item">Sample Item</li>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
