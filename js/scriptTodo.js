@@ -35,18 +35,25 @@ function refreshTodos(firstPageLoad = false) {
     for(i in todos){
         let todoItem = createTodoListItem(i);
         todoListElement.append(todoItem);
-        console.log(todoItem);
     }
 }
+
+function deleteTodo(ev) {
+    let todoId = $(ev.target).parent().attr('data-id');
+    todos.splice(todoId,1);
+    refreshTodos();
+}
+
+
 
 function createTodoListItem(i) {
     let todoItem = $(`<li data-id="${i}" class="list-group-item"></li>`);
     todoItem.append($(`<input type="checkbox" class="col-1">`).attr('checked',todos[i].done));
     todoItem.append($(`<span class="col-8">${todos[i].task}</span>`));
-    todoItem.append($(`<i class="fa fa-remove col-1 delete"></i>`));
+    todoItem.append($(`<i class="fa fa-remove col-1 delete"></i>`)
+        .click(deleteTodo));
     todoItem.append($(`<i class="fa fa-chevron-up col-1 icn-move"></i>`));
     todoItem.append($(`<i class="fa fa-chevron-down col-1 icn-move"></i>`));
-
 
     return todoItem;
 }
