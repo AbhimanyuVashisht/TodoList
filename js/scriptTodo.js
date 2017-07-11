@@ -40,7 +40,14 @@ function refreshTodos(firstPageLoad = false) {
 }
 
 function createTodoListItem(i) {
-    let todoItem = $(`<li data-id="${i}" class="list-group-item">${todos[i].task}</li>`);
+    let todoItem = $(`<li data-id="${i}" class="list-group-item"></li>`);
+    todoItem.append($(`<input type="checkbox" class="col-1">`).attr('checked',todos[i].done));
+    todoItem.append($(`<span class="col-8">${todos[i].task}</span>`));
+    todoItem.append($(`<i class="fa fa-remove col-1 delete"></i>`));
+    todoItem.append($(`<i class="fa fa-chevron-up col-1 icn-move"></i>`));
+    todoItem.append($(`<i class="fa fa-chevron-down col-1 icn-move"></i>`));
+
+
     return todoItem;
 }
 

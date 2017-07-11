@@ -1,3 +1,12 @@
-#todoList-container{
+#todoList-container {
     padding: 20px;
+}
+
+
+.delete {
+    color: #d9534f;
+}
+
+.icn-move {
+    color: #0275d8;
 }
