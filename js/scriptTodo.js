@@ -8,7 +8,7 @@ let todoListElement;
 
 function Todo(task, done) {
     this.task = task;
-    this.done = done;
+    this.done = !!done;
 }
 $(function () {
     let btnAdd = $('#btn-add-todo');
@@ -20,6 +20,10 @@ $(function () {
 
     btnAdd.click(function () {
         addTodo(inputNewTodo.val());
+    });
+    
+    btnClean.click(function () {
+        
     })
 });
 
@@ -37,6 +41,11 @@ function refreshTodos(firstPageLoad = false) {
         let todoItem = createTodoListItem(i);
         todoListElement.append(todoItem);
     }
+}
+function setTodoAsDone(ev) {
+    let todoId = ($(ev.target).parent().attr('data-id'))
+    todos[todoId].done = !todos[todoId].done;
+    refreshTodos();
 }
 
 // Delete the particular Todo
@@ -63,7 +72,7 @@ function moveTodoDown(ev) {
 // Create the List Element with EventListeners
 function createTodoListItem(i) {
     let todoItem = $(`<li data-id="${i}" class="list-group-item"></li>`);
-    todoItem.append($(`<input type="checkbox" class="col-1">`).attr('checked',todos[i].done));
+    todoItem.append($(`<input type="checkbox" class="col-1">`).attr('checked',todos[i].done).change(setTodoAsDone));
     todoItem.append($(`<span class="col-8">${todos[i].task}</span>`));
     todoItem.append($(`<i class="fa fa-remove col-1 delete"></i>`)
         .click(deleteTodo));
