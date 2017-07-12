@@ -2,6 +2,10 @@
     padding: 20px;
 }
 
+.todo-done {
+    text-decoration: line-through;
+    color: #999;
+}
 
 .delete {
     color: #d9534f;

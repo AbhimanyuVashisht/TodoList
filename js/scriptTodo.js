@@ -77,9 +77,15 @@ function moveTodoDown(ev) {
 
 // Create the List Element with EventListeners
 function createTodoListItem(i) {
+
+    let spanElement = ($(`<span class="col-8">${todos[i].task}</span>`));
+
+    if(todos[i].done){
+        spanElement.addClass(" todo-done");
+    }
     let todoItem = $(`<li data-id="${i}" class="list-group-item"></li>`);
     todoItem.append($(`<input type="checkbox" class="col-1">`).attr('checked',todos[i].done).change(setTodoAsDone));
-    todoItem.append($(`<span class="col-8">${todos[i].task}</span>`));
+    todoItem.append(spanElement);
     todoItem.append($(`<i class="fa fa-remove col-1 delete"></i>`)
         .click(deleteTodo));
     todoItem.append($(`<i class="fa fa-chevron-up col-1 icn-move"></i>`)
