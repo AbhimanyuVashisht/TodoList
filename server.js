@@ -9,6 +9,7 @@
  const app = express();
  const Todos = require('./db').Todos;
  const bp = require('body-parser');
+ let port = process.env.PORT || 8000;
  app.use('/', express.static(__dirname+'/public_static'));
 
  app.use(bp.urlencoded({extended: true}));
@@ -35,6 +36,6 @@
      })
  });
 
- app.listen(8000, function(){
+ app.listen(port, function(){
      console.log("ServerRunning on http://localhost:8000/");
  });
